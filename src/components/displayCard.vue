@@ -45,7 +45,7 @@ export default {
 <style scoped>
 .display-card {
   background-size: cover;
-  width: 27vw;
+  width: 27.6vw;
   height: 12vh;
   border-radius: 7px;
   box-shadow: 1px 1px 4px #707070;
