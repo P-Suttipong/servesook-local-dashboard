@@ -52,8 +52,8 @@ app.use(express.json());
 
 app.get("/getFarmData", async (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
-  // res.send(mqttData);
-  res.send("ENVI,IN,31.32,76.65");
+  res.send(mqttData);
+  // res.send("ENVI,IN,31.32,76.65");
 });
 
 app.get("/getIP", async (req, res) => {
