@@ -56,7 +56,7 @@ export default {
   font-size: 12px;
 }
 .value-text {
-  font-size: 18px;
+  font-size: 16px;
 }
 .icon {
   font-size: 18px;

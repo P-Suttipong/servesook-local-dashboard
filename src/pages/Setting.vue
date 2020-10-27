@@ -7,7 +7,7 @@
         @click="configGateway()"
         ><i class="fas fa-sliders-h q-mr-md"></i> Default Gateway Config</q-btn
       >
-      <q-btn class="reboot-btn q-mt-xl" @click="rebootRaspi()"
+      <q-btn class="reboot-btn q-mt-lg" @click="rebootRaspi()"
         ><i class="fas fa-undo q-mr-md"></i> Reboot</q-btn
       >
     </div>
@@ -68,8 +68,8 @@ export default {
   background-image: linear-gradient(180deg, #5a9dfd, #326dff);
   font-size: 18px;
   font-weight: 400;
-  height: 12vh;
-  width: 30vw;
+  height: 14vh;
+  width: 32vw;
   border-radius: 7px;
   color: #fff;
 }
@@ -77,8 +77,8 @@ export default {
   background-image: linear-gradient(180deg, #ff5733, #c70039);
   font-size: 18px;
   font-weight: 400;
-  height: 12vh;
-  width: 30vw;
+  height: 14vh;
+  width: 32vw;
   border-radius: 7px;
   color: #fff;
 }

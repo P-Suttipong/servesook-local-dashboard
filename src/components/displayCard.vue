@@ -45,7 +45,7 @@ export default {
 <style scoped>
 .display-card {
   background-size: cover;
-  width: 27.6vw;
+  width: 28vw;
   height: 12vh;
   border-radius: 7px;
   box-shadow: 1px 1px 4px #707070;
@@ -56,7 +56,7 @@ export default {
   font-size: 12px;
 }
 .value-text {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 500;
 }
 .icon {

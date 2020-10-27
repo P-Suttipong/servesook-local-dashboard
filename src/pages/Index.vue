@@ -3,18 +3,18 @@
     <div class="flex column items-center justify-center">
       <div class="row">
         <displayCard
-          class="q-ml-xs q-mx-xs"
+          class="q-mr-xs"
           :icon="`fas fa-laptop-house`"
           :topic="`IP Address`"
           :value="DefaultGateway"
           :cardColor="
-            `background-image: linear-gradient(180deg, #FEDA0C, #FFB305);`
+            `background-image: linear-gradient(180deg, #FF7575, #F90057);`
           "
           :topicColor="`color: White`"
           :valueColor="`color: White`"
         ></displayCard>
         <displayCard
-          class="q-mx-xs"
+          class="q-ml-xs"
           :icon="`fas fa-sun`"
           :topic="`Lux`"
           :value="`${lux} Lux`"
@@ -39,7 +39,7 @@
         :arrows="arrows"
         control-color="grey-6"
         height="18vh"
-        class="q-mt-lg rounded-borders"
+        class="q-mt-xs rounded-borders"
       >
         <q-carousel-slide name="in" class="column no-wrap flex-center">
           <displayCardLong
@@ -97,9 +97,9 @@
             :value1="`MAIN : ${mainTank.ph}`"
             :icon2="`fas fa-flask`"
             :topic2="`EC`"
-            :value2="`MAIN : ${mainTank.ec} mS/cm`"
+            :value2="`MAIN : ${mainTank.ec}`"
             :cardColor="
-              `background-image: linear-gradient(180deg, #5a9dfd, #326DFF);`
+              `background-image: linear-gradient(180deg, #5a9dfd, #176ADF);`
             "
             :topicColor="`color: White`"
             :valueColor="`color: White`"
@@ -113,9 +113,9 @@
             :value1="`LEFT : ${subLeft.ph}`"
             :icon2="`fas fa-flask`"
             :topic2="`EC`"
-            :value2="`LEFT : ${subLeft.ec} mS/cm`"
+            :value2="`LEFT : ${subLeft.ec}`"
             :cardColor="
-              `background-image: linear-gradient(180deg, #5a9dfd, #326DFF);`
+              `background-image: linear-gradient(180deg, #5a9dfd, #176ADF);`
             "
             :topicColor="`color: White`"
             :valueColor="`color: White`"
@@ -129,9 +129,9 @@
             :value1="`RIGHT : ${subRight.ph}`"
             :icon2="`fas fa-flask`"
             :topic2="`EC`"
-            :value2="`RIGHT : ${subRight.ec} mS/cm`"
+            :value2="`RIGHT : ${subRight.ec}`"
             :cardColor="
-              `background-image: linear-gradient(180deg, #5a9dfd, #326DFF);`
+              `background-image: linear-gradient(180deg, #5a9dfd, #176ADF);`
             "
             :topicColor="`color: White`"
             :valueColor="`color: White`"
