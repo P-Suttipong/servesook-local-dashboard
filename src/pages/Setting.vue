@@ -21,7 +21,7 @@
         </q-card-section>
 
         <q-card-actions align="center">
-          <q-btn flat label="close" color="primary" v-close-popup />
+          <q-btn flat label="close" color="primary" @click="closeModal()" />
         </q-card-actions>
       </q-card>
     </q-dialog>
@@ -55,6 +55,9 @@ export default {
     },
     rebootRaspi() {
       this.$store.dispatch("rebootRaspi");
+    },
+    closeModal() {
+      this.$store.commit("SET_IS_CONFIG", false);
     }
   }
 };
