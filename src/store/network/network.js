@@ -24,7 +24,8 @@ const state = {
     ph: "N/A"
   },
   lux: "N/A",
-  loadingConfigGateway: false
+  loadingConfigGateway: false,
+  isConfig: false
 };
 
 const getters = {};
@@ -42,7 +43,6 @@ const actions = {
   },
   configDefaultDateway: async ({ commit }) => {
     commit("SET_LOADING_CONFIG_DGW", true);
-    con;
     await axios
       .get("http://localhost:3000/configDhcpcd")
       .then(response => {
@@ -55,6 +55,7 @@ const actions = {
       .catch(error =>
         console.log("Config Default Gateway Error : ", error.message)
       );
+    commit("SET_IS_CONFIG", true);
     commit("SET_LOADING_CONFIG_DGW", false);
   },
   getFarmData: async ({ commit }) => {
@@ -126,6 +127,9 @@ const mutations = {
   SET_WATER_RIGHT(state, data) {
     state.subRight.ec = data[0];
     state.subRight.ph = data[1];
+  },
+  SET_IS_CONFIG(state, status) {
+    state.isConfig = status;
   }
 };
 

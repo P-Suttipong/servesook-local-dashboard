@@ -3,7 +3,7 @@
     <div class="flex column items-center justify-center">
       <div class="row">
         <displayCard
-          class="q-mx-xs"
+          class="q-ml-xs q-mx-xs"
           :icon="`fas fa-laptop-house`"
           :topic="`IP Address`"
           :value="DefaultGateway"
@@ -14,7 +14,7 @@
           :valueColor="`color: White`"
         ></displayCard>
         <displayCard
-          class="q-mx-md"
+          class="q-mx-xs"
           :icon="`fas fa-sun`"
           :topic="`Lux`"
           :value="`${lux} Lux`"
@@ -46,10 +46,10 @@
             class="q-mx-md q-mt-md"
             :icon1="`fas fa-temperature-high`"
             :topic1="`Temperature`"
-            :value1="`IN: ${tempIn.temp}`"
+            :value1="`IN : ${tempIn.temp} °C`"
             :icon2="`fas fa-tint`"
             :topic2="`Humidity`"
-            :value2="`IN: ${tempIn.humd}`"
+            :value2="`IN : ${tempIn.humd} %`"
             :cardColor="
               `background-image: linear-gradient(80deg, #00F497, #00C6F2);`
             "
@@ -62,10 +62,10 @@
             class="q-mx-md q-mt-md"
             :icon1="`fas fa-temperature-high`"
             :topic1="`Temperature`"
-            :value1="`OUT: ${tempOut.temp}`"
+            :value1="`OUT : ${tempOut.temp} °C`"
             :icon2="`fas fa-tint`"
             :topic2="`Humidity`"
-            :value2="`OUT: ${tempOut.humd}`"
+            :value2="`OUT : ${tempOut.humd} %`"
             :cardColor="
               `background-image: linear-gradient(80deg, #00F497, #00C6F2);`
             "
@@ -94,10 +94,10 @@
             class="q-mx-md q-mt-md"
             :icon1="`fas fa-water`"
             :topic1="`pH`"
-            :value1="`MAIN: ${mainTank.ph}`"
+            :value1="`MAIN : ${mainTank.ph}`"
             :icon2="`fas fa-flask`"
             :topic2="`EC`"
-            :value2="`MAIN: ${mainTank.ec}`"
+            :value2="`MAIN : ${mainTank.ec} mS/cm`"
             :cardColor="
               `background-image: linear-gradient(180deg, #5a9dfd, #326DFF);`
             "
@@ -110,10 +110,10 @@
             class="q-mx-md q-mt-md"
             :icon1="`fas fa-water`"
             :topic1="`pH`"
-            :value1="`LEFT: ${subLeft.ph}`"
+            :value1="`LEFT : ${subLeft.ph}`"
             :icon2="`fas fa-flask`"
             :topic2="`EC`"
-            :value2="`LEFT: ${subLeft.ec}`"
+            :value2="`LEFT : ${subLeft.ec} mS/cm`"
             :cardColor="
               `background-image: linear-gradient(180deg, #5a9dfd, #326DFF);`
             "
@@ -126,10 +126,10 @@
             class="q-mx-md q-mt-md"
             :icon1="`fas fa-water`"
             :topic1="`pH`"
-            :value1="`RIGHT: ${subRight.ph}`"
+            :value1="`RIGHT : ${subRight.ph}`"
             :icon2="`fas fa-flask`"
             :topic2="`EC`"
-            :value2="`RIGHT: ${subRight.ec}`"
+            :value2="`RIGHT : ${subRight.ec} mS/cm`"
             :cardColor="
               `background-image: linear-gradient(180deg, #5a9dfd, #326DFF);`
             "

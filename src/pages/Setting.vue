@@ -11,6 +11,20 @@
         ><i class="fas fa-undo q-mr-md"></i> Reboot</q-btn
       >
     </div>
+
+    <q-dialog v-model="alert">
+      <q-card>
+        <q-card-section> </q-card-section>
+
+        <q-card-section class="q-pt-none alert-text">
+          Configuration Default Gateway Done !
+        </q-card-section>
+
+        <q-card-actions align="center">
+          <q-btn flat label="close" color="primary" v-close-popup />
+        </q-card-actions>
+      </q-card>
+    </q-dialog>
   </div>
 </template>
 
@@ -19,11 +33,17 @@ import { mapActions, mapState } from "vuex";
 export default {
   name: "SettingPage",
   components: {},
+  data() {
+    return {
+      alert: false
+    };
+  },
   computed: {
     ...mapState({
       DefaultGateway: state => state.network.defaultGateway,
       staticIP: state => state.network.staticIP,
-      loadingConfigGateway: state => state.network.loadingConfigGateway
+      loadingConfigGateway: state => state.network.loadingConfigGateway,
+      isConfig: state => state.network.isConfig
     })
   },
   methods: {
@@ -36,6 +56,9 @@ export default {
     rebootRaspi() {
       this.$store.dispatch("rebootRaspi");
     }
+  },
+  mounted() {
+    this.alert = this.isConfig;
   }
 };
 </script>
@@ -58,5 +81,8 @@ export default {
   width: 30vw;
   border-radius: 7px;
   color: #fff;
+}
+.alert-text {
+  font-size: 18px;
 }
 </style>
