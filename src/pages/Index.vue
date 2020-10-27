@@ -3,7 +3,7 @@
     <div class="flex column items-center justify-center">
       <div class="row">
         <displayCard
-          class="q-mx-md"
+          class="q-mx-xs"
           :icon="`fas fa-laptop-house`"
           :topic="`IP Address`"
           :value="DefaultGateway"
@@ -39,7 +39,7 @@
         :arrows="arrows"
         control-color="grey-6"
         height="18vh"
-        class="q-mt-xs rounded-borders"
+        class="q-mt-lg rounded-borders"
       >
         <q-carousel-slide name="in" class="column no-wrap flex-center">
           <displayCardLong
@@ -86,7 +86,7 @@
         :arrows="arrows"
         :autoplay="autoplay"
         control-color="grey-6"
-        height="15vh"
+        height="18vh"
         class="rounded-borders"
       >
         <q-carousel-slide name="main" class="column no-wrap flex-center">
