@@ -12,7 +12,7 @@
       >
     </div>
 
-    <q-dialog v-model="alert">
+    <q-dialog v-model="isConfig">
       <q-card>
         <q-card-section> </q-card-section>
 
@@ -56,9 +56,6 @@ export default {
     rebootRaspi() {
       this.$store.dispatch("rebootRaspi");
     }
-  },
-  mounted() {
-    this.alert = this.isConfig;
   }
 };
 </script>
